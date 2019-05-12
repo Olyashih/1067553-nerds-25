@@ -5,8 +5,114 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html" >
+          <img src="nerds-logo.svg" width="160" height="67" alt="Логотип студии Nerds">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="agency.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
+      <section class="advantages">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="advantage-list">
+          <li class="advantage-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button class="button" type="button">Заказать</button>
+          </li>
+          <li class="advantage-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="button" type="button">Заказать</button>
+          </li>
+          <li class="advantage-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+            <button class="button" type="button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+      <section class="studio">
+        <h2 class="visually-hidden">О нас</h2>
+        <div>
+          <p><b>Мы — маленькая, но гордая  дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="small-caps">Выполняем заказы на разработку:</p>
+          <ul class="default-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div>
+          <p><img src="nerds-illustration.png" width="360" height="208" alt="Логотип студии Nerds"></p>
+          <table class="factoids">
+            <tr>
+              <th class="small-caps">с 2004 года Любим точность во всем:</th>
+            </tr>
+            <tr>
+              <td><b>146</b><sup>%</sup></td>
+              <td><b>100</b><sup>%</sup></td>
+              <td><b>50</b><sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень  самоотдачи</td>
+              <td>Соблюдение  сроков</td>
+              <td>Минимальная  предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+        <ul>
+          <li><img src="logo-1.png" width="90" height="209" alt="HTML academy"></li>
+          <li><img src="logo-2.png" width="90" height="209" alt="Barbershop Borodinski"></li>
+          <li><img src="logo-3.png" width="90" height="209" alt="Pink"></li>
+          <li><img src="logo-4.png" width="90" height="209" alt="Mishka"></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts">
+          <p class="small-caps">NЁRDS DESIGN STUDIO</p>
+          <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button" type="button">Напишите нам</button>
+        </div>
+        <div class="nerds-map">
+        </div>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <p><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <p>Ваше имя:</p>
+      <p>Ваш e-mail:</p>
+      <p>Текст письма:</p>
+      <button class="button" type="submit">Отправить</button>
+      <span class="modal-close">×</span>
+    </section>
   </body>
 </html>
