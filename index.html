@@ -79,7 +79,7 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul>
-          <li><img src="img/logo-1.png" width="209" height="90" alt="HTML academy"></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="209" height="90" alt="HTML academy"></a></li>
           <li><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></li>
           <li><img src="img/logo-3.png" width="209" height="90" alt="Pink"></li>
           <li><img src="img/logo-4.png" width="209" height="90" alt="Mishka"></li>
@@ -109,11 +109,13 @@
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <button class="button" type="submit">Отправить</button>
-      <span class="modal-close">×</span>
+      <form action="#" method="get">
+        <label>Ваше имя:<br><input type="text" name="name" placeholder="Имя Фамилия"></label><br>
+        <label>Ваш e-mail:<br><input type="email" name="email" placeholder="email@example.com"></label><br>
+        <label>Текст письма:<br><textarea name="text" placeholder="В свободной форме"></textarea></label><br>
+        <button class="button" type="submit">Отправить</button>
+        <input type="image" src="img/close-cross.svg" alt="Закрыть">
+      </form>
     </section>
   </body>
 </html>
