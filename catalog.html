@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,8 +28,17 @@
 
       <h1>Магазин готовых шаблонов</h1>
       <form action="#" method="post">
-        <fieldset>
-          <p>Сетка:</p>
+        <fieldset class="form">
+          <p class="small-caps">Стоимость:</p>
+          <label>
+            от<input type="number" class="amount" name="amount" placeholder="0">
+          </label>
+          <label>
+            до<input type="number" class="amount" name="amount" placeholder="15 000">
+          </label></br>
+        </fieldset>
+        <fieldset class="form">
+          <p class="small-caps">Сетка:</p>
           <label>
             <input type="radio" name="grid" value="Адаптивная" checked>Адаптивная
           </label><br>
@@ -37,8 +49,8 @@
             <input type="radio" name="grid" value="Резиновая">Резиновая
           </label>
         </fieldset>
-        <fieldset>
-          <p>Особенности:</p>
+        <fieldset class="form">
+          <p class="small-caps">Особенности:</p>
           <label>
             <input type="checkbox" checked>Слайдер
           </label><br>
@@ -55,7 +67,7 @@
             <input type="checkbox">Корзина
           </label><br>
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="button gray" type="submit">Показать</button>
       </form>
 
       <section class="templates">
@@ -163,7 +175,7 @@
         <label>Ваше имя:<br><input type="text" name="name" placeholder="Имя Фамилия"></label><br>
         <label>Ваш e-mail:<br><input type="email" name="email" placeholder="email@example.com"></label><br>
         <label>Текст письма:<br><textarea name="text" placeholder="В свободной форме"></textarea></label><br>
-        <button class="button" type="submit">Отправить</button>
+        <input type="submit" value="Отправить" class="button">
         <input type="image" src="img/close-cross.svg" alt="Закрыть">
       </form>
     </section>
