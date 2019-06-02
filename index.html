@@ -10,6 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <div class="container">
         <a class="main-header-logo" href="index.html" >
           <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип студии Nerds">
         </a>
@@ -22,6 +23,7 @@
         <ul class="user-navigation">
           <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
         </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -48,9 +50,9 @@
       </section>
       <section class="studio">
         <h2 class="visually-hidden">О нас</h2>
-        <div>
+        <div class="about">
           <p><b>Мы — маленькая, но гордая  дизайн-студия из Краснодара.</b></p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="small-caps">Выполняем заказы на разработку:</p>
           <ul class="default-list">
             <li>Веб-сайтов любой сложности</li>
@@ -58,9 +60,9 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
+        <div class="factoids">
           <p><img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии Nerds"></p>
-          <table class="factoids">
+          <table class="">
             <tr>
               <th>с 2004 года Любим точность во всем:</th>
             </tr>
@@ -79,7 +81,7 @@
       </section>
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
-        <ul>
+        <ul class="partners-item">
           <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="209" height="90" alt="HTML academy"></a></li>
           <li><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></li>
           <li><img src="img/logo-3.png" width="209" height="90" alt="Pink"></li>
@@ -89,23 +91,29 @@
     </main>
     <footer class="main-footer">
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts">
-          <p class="small-caps">NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <button class="button" type="button">Напишите нам</button>
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts">
+            <p class="small-caps">NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <button class="button" type="button">Напишите нам</button>
+          </div>
+          <div class="nerds-map">
+            <img src="img/map.png" width="1442" height="419" alt="Где мы находимся на карте">
+          </div>
+          <div class="footer-bottom">
+            <ul class="social">
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <p><b>Давайте дружить, это выгодно!</b></p>
+            <p class="caption">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
-        <div class="nerds-map">
-          <img src="img/map.png" width="1442" height="419" alt="Где мы находимся на карте">
-        </div>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p class="caption">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
     <section class="modal">

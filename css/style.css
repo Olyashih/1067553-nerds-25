@@ -16,6 +16,7 @@ a {
 
 .visually-hidden {
   visibility: hidden;
+  display: none;
 }
 
 /* Шапка */
@@ -60,7 +61,7 @@ h1 {
 }
 
 .advantage-item h3 {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
@@ -196,7 +197,8 @@ h1 {
   color: #000000;
 }
 
-.paging-link {
+.paging-link,
+.paging-next {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -258,6 +260,12 @@ h1 {
 
 /* Попапы */
 
+.modal {
+  /* Временно */
+  visibility: hidden;
+  display: none;
+}
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
@@ -302,4 +310,226 @@ h1 {
   display: block;
 
   background-image: url(../img/illustration-3.png);
+}
+
+/* Сетка */
+html,
+body {
+  /* Временно для сетки */
+  min-width: 1112px;
+  min-height: 1750px;
+}
+
+.main-header {
+  margin-bottom: 74px;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* Временно для сетки */
+  background-color: transparent;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 67px;
+  margin-right: 200px;
+  padding-top: 48px;
+  display: block;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  min-width: 440px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Временно для сетки */
+  min-height: 30px;
+  padding-top: 74px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Временно для сетки */
+  min-height: 30px;
+  padding-top: 74px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation .container {
+  display: flex;
+}
+
+.advantage-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  /* Временно для сетки */
+  min-height: 347px;
+}
+
+.advantage-item {
+  width: 300px;
+  /* Временно для сетки */
+  min-height: 347px;
+}
+
+.studio {
+  margin:0;
+  padding:0;
+  padding-top: 40px;
+  padding-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.about {
+  width: 760px;
+  /* Временно для сетки */
+  min-height: 409px;
+}
+
+.factoids {
+  width: 360px;
+  /* Временно для сетки */
+  min-height: 409px;
+}
+
+.partners {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+  /* Временно для сетки */
+  min-height: 80px;
+}
+
+.partners-item {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  /* Временно для сетки */
+  min-height: 80px;
+}
+
+.main-footer {
+  margin:0;
+  padding:0;
+  margin-top: 79px;
+  /* Временно для сетки */
+  min-height: 635px;
+}
+
+.contacts {
+  width: 219px;
+  min-height: 214px;
+  padding: 47px 50px;
+}
+
+.nerds-map {
+  display: block;
+  position: relative;
+  z-index: -1;
+  left: -140px;
+  width: 100%;
+}
+
+.footer-bottom {
+  margin-top: 68px;
+  min-height: 149px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  width: 261px;
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe {
+  width: 760px;
+}
+
+.large-title {
+  width: 1160px;
+  text-align: center;
+  margin-bottom: 168px;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+  margin-right: 140px;
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+}
+
+.templates {
+  margin: 0;
+  padding: 0;
+  width: 760px;
+  min-height: 616px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 360px;
+  height: 616px;
+  display: flex;
+}
+
+.inner-columns {
+  display: flex;
+}
+
+.paging {
+  width: 443px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paging-link {
+  width: 50px;
+  display: flex;
+}
+
+.paging-next {
+  width: 260px;
+  display: flex;
+}
+
+.header-background {
+  min-height: 355px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #EEEEEE;
+  top: 0;
+  left: 0;
 }
